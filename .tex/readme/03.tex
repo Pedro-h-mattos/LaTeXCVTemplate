@@ -1,0 +1,138 @@
+\section{Reading and Editing TeX Files}
+PDF files cannot be directly edited, instead \emph{CVexample.tex} has to be recompiled with edits --- which are then updated in the corresponding PDF document. \par
+
+Before creating documents from scratch, we'll learn to identify the elements within .tex files and to edit them. The result will be a completely personalised r\'esum\'e, useful for sending out to employers. \par
+
+\subsection{Elements of the Document}
+\begin{instrct}
+Return to your .tex document. Compare elements of the \emph{CVexample.tex} with its .pdf output --- can you match each section with its corresponding code?
+\end{instrct}
+
+TeX files always begin with a class declaration, e.g. \lstinline|\documentclass{}|, which determines what kind of document is produced. Our r\'esum\'e is constructed from a custom class, contained within the file \emph{articleCV.cls} (more on this later). \par
+
+The `body', or contents of a text document are contained between the declarations \lstinline|\begin{document}| and \lstinline|\end{document}|. This includes all the text that you see on your PDF document. \par
+
+From here, the section headers are probably the easiest elements to pick out. Sections are always enclosed by the command \lstinline|\section{}|. There are three within this .tex file. \par
+
+Each section is followed by at least one code element, beginning with the command \lstinline|\tab{}|. This is a custom command and one we'll return to later. For now, remember that these elements format the body of your r\'esum\'e. \par
+
+Near the top of your TeX file is the code that will format your document's header, which includes two code blocks. Although it may look intimidating, this is where we'll start editing. \par
+
+\subsection{The Document Header pt.1}
+The first element of the document header contains the title \emph{R\'esum\'e/CV} and a name. It looks like: \par
+
+\begin{lstlisting}
+1.  \begin{centering}
+2.    {\large \scshape R\'esum\'e/CV \par}
+3.    {\Huge Pedro Henrique Mattos \par}
+4.  \end{centering}
+\end{lstlisting}
+
+Only plain text is output on in your document, once it is compiled. Special characters, e.g. \lstinline|{}| or commands (prepended by the \lstinline|\| symbol) are ignored --- as they control how your document looks. \par
+
+So, we can safely change the contents and worry about the formatting later. \par
+
+\begin{instrct}
+Rewrite the  name with your own, and then choose a title for your document, or no title at all. Then, recompile your document.
+\end{instrct}
+
+Now, we can consider how these lines are formatted. \par
+
+\lstinline|1.\begin{centering}| and \lstinline|4.\end{centering}| ensure that the document title is centered on the page. Deleting or commenting-out these lines would automtically left-adjust the text, which may be preferred. \par
+
+The command \lstinline|\large| increases the font size, relative to the normal font size. Compare this to the command \lstinline|\Huge|, in the following line. \LaTeX ~ has several different font sizes, which are worth experimenting with. \par
+
+\begin{ext}
+Try changing \lstinline|\large| to \lstinline|\Huge| and recompile your document, so that both lines are the same size.
+\end{ext}
+
+\begin{qst}
+Consider the change you made. Do you prefer this layout? Why might you want your name to be larger than the title?
+\end{qst}
+
+The last command, \lstinline|\scshape|, stands for \emph{small caps}. Again, this is an optional choice. You may prefer a normal font; in which case this expression can be removed. \par
+
+\subsection{The Document Header pt.2}
+The second element that describes the section header looks more complicated. Our PDF file contains two columns, but these aren't immediately obvious within our TeX file. \par
+
+\begin{lstlisting}
+1.  \begin{table}[ht]
+2.    \centering
+3.    \begin{tabular}{>{\small} l >{\footnotesize}l}
+4.    <Undergraduate, 3rd Year>, & Email: \Email{\email} \\
+5.    \dept, & Tel: \phone \\
+6.    \org & \url{\website}
+7.    \end{tabular}
+8.  \end{table}
+\end{lstlisting}
+
+The above code is an example of the \emph{tabular} environment, which creates tables. Our table is held within the commands \lstinline|3.\begin{tabular}| and \lstinline|7.\end{tabular}|. \par
+
+Look at the expression \lstinline|3.\begin{tabular}{>{\small} l >{\footnotesize}l}|. The tabular environment contains two columns, that are each left-adjusted. These are indicated by the two \emph{`l'} symbols. \par
+
+The commands \lstinline|>{\small}| and \lstinline|>{\footnotesize}| prepend the respective size ahead of each row in either column. So, text is small within the first column and `footnotesize' within the second column. \par
+
+The tabular itself is contained within a \emph{table}, which is a type of \emph{float} or `container' that holds an entity and controls its position on the page. \par
+
+The next three lines describe the contents of our table. \par
+
+\begin{lstlisting}
+4.    <Undergraduate, 3rd Year>, & Email: \Email{\email} \\
+5.    \dept, & Tel: \phone \\
+6.    \org & \url{\website}
+\end{lstlisting}
+
+Each line describes a single row and ends with a \lstinline|\\| symbol --- indicating an end-of-line. Each column is delimited by the ampsersand \lstinline|&| symbol. \par
+
+These three lines contain several custom commands, \lstinline|\email|, \lstinline|\dept|, \lstinline|\phone|, \lstinline|\org| and \lstinline|\website|. The definitions of these are contained within the file \emph{info.sty}. \par
+
+Personal information, that is often repeated, can be saved in a file and referenced with a short command. This is useful if you'd like to have multiple copies of your r\'esum\'e. \par
+
+In this case, we can change all of the information in the header, without worrying about the formatting of the table. \par
+
+\begin{instrct}
+Open the file \emph{info.sty}.
+\end{instrct}
+
+New commands are structured as follows: \lstinline|\newcommand{\<tag>}{<definition>}|. Commands are referenced by their tags. Changing the definitions of the commands contained within the file \emph{info.sty} will update them where they are referenced in your main file. \par
+
+\begin{instrct}
+Rewrite each definition with your own information. Then, save \emph{info.sty} and recompile \emph{CVexample.tex}
+\end{instrct}
+
+In the case that you are not an undergraduate student, also replace the row \emph{`Undergraduate, 3rd Year'} with your current title or position. \par
+
+\subsection{A Note on Document Formatting}
+The main body of a r\'esum\'e document is generally limited to short `sections' or subheadings, that normally include details about a relevant position, qualification or experience and optionally a date; an organisation and a location. Often, these subheadings are followed by bullet-points providing more information. \par
+
+In the PDF document, subheadings are elements of two lines, with text justified to both the right and left margins. Text in the first line is larger, and bold. Text in the second line is smaller, sans-serif and italicized. \par
+
+\subsection{Creating R\'esum\'e Subheadings}
+The class file \emph{articleCV.cls} contains definitions for a custom command \lstinline|\tab| that creates a subheading with this structure. These require loading two packages \emph{tabularx} and {array}. \par
+
+The \lstinline|\tab{}| command is defined in the following code block: \par
+
+\begin{lstlisting}
+1.  \newcommand{\tab}[4]{
+2.    \begin{tabularx}{1\textwidth}{@{} $ X ^ r}
+3.    \rowstyle{\bfseries} {#1} & {#2} \\
+4.    \rowstyle{\itshape\sffamily\small} {#3} & {#4} \\
+5.    \end{tabularx}
+6.  }
+\end{lstlisting}
+
+\lstinline|6.\newcommand{\tab}[4]{| creates a new command, with the name \lstinline|\tab|, that accepts four arguments, which can be NULL. Arguments to a command are supplied within curly braces, which must be present.
+
+Thus in the main file, a header is created by writing the command: \par
+
+\begin{lstlisting}
+  \tab %
+    {#1}{#2}
+    {#3}{#4}
+\end{lstlisting}
+
+Excecution of the \lstinline|\tab| command simply creates a table, with two columns and two rows, whose arguments are given as inputs. \par
+
+Formatting of each row is controlled by \lstinline|3.\rowstyle{\bfseries}| and \lstinline|4.\rowstyle{\itshape\sffamily\small|, which respectively make the first row bold, and the second row italicized, sans-serif and small. Changing these parameters will change the style of your r\'esum\'e's subsections. \par
+
+For more detail on how the \lstinline|\tab{}| command was implemented, see section~5.1. \par
