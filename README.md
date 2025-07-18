@@ -1,4 +1,4 @@
-A template for creating a professional-looking, PDF-format CV or résumé. Aimed at users with limited or no prior experience using a typesetting software such as LaTeX.
+A template for creating a professional-looking, PDF-format curriculum vitae or résumé. Aimed at users with limited or no prior experience using a typesetting software such as LaTeX.
 
 ## Get Started
 
