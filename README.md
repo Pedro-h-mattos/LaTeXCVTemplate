@@ -29,4 +29,4 @@ Or, compile `CVexample.tex` from within a TeX editor.
 
 Doing either should output the document `CVexample.pdf`. This is a template you can use to build a CV or résumé.
 
-If you are already familiar with LaTeX, you can edit `CVexample.tex` directly. Otherwise, open the document `instructions.pdf`, which contains a guide to editing your template. 
+If you are already familiar with LaTeX, you can edit `CVexample.tex` directly. Otherwise, download and open the document `instructions.pdf`, which contains a guide to editing your template. 
