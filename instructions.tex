@@ -16,41 +16,31 @@
 % instructions.tex, instructions.sty and its subsidiaries (within .tex/instructions/),
 % and the derived files CVexample.pdf and instructions.pdf
 
-
-
 \documentclass[10pt, a4paper]{article}
 
 \usepackage{.sty/instructions}
+\usepackage[inline]{enumitem}
+\setcounter{secnumdepth}{0}
 
 \begin{document}
 
 \begin{center}
-{\Huge\bfseries\normalfont Readme}
+{\Huge\bfseries\normalfont Instructions}
+\par
+A reference guide for version 2.0
 \par
 Pedro Henrique Mattos
-\par
-Instruction manual for version 2.0
 \end{center}
 
 %{\par\noindent\rule{\textwidth}{0.4pt}}
-
-
-The contents of this package (.zip folder) are designed to introduce you to typesetting with \LaTeX, by providing instructions to work with .tex and .cls files, read package documentation, and manage files within a project directory. \par
-
 
 \tableofcontents
 
 \clearpage
 
-\input{.tex/readme/00.tex}
+\input{.tex/instructions/intro.tex}
 
-\input{.tex/readme/01.tex}
-
-\input{.tex/readme/02.tex}
-
-\input{.tex/readme/03.tex}
-
-\input{.tex/readme/04.tex}
+\input{.tex/instructions/getstarted.tex}
 
 
 
