@@ -11,7 +11,7 @@ Also consider installing a dedicated GUI (e.g. TeXworks or TeXstudio) for workin
 Alternatively, [Overleaf](https://www.overleaf.com/) is an cloud-based LaTeX editor that doesn't require any local installation.
 
 ### Step One: Download
-This project comprises only the files `articleCV.cls`, `CVexample.tex` and `info.sty`, and the instruction manual `howto.pdf`.
+This project comprises only the files `articleCV.cls`, `CVexample.tex` and `info.sty`, and the instruction manual `userguide.pdf`.
 
 There are two ways to download this project.
 
@@ -29,7 +29,7 @@ This will download the entire repository as a .zip file; including the files `RE
 4. Repeat steps 1-2 for the other files.
 3. Once downloaded, save your files in a new folder (e.g. myresume).
 
-Either way, you should have obtained a copy of the project filess that you can edit on your local computer. 
+Either way, you should have obtained a copy of the project files that you can edit on your local computer. 
 
 ### Step Two: Usage 
 Open the command terminal and run the command: 
@@ -42,4 +42,4 @@ Or open `CVexample.pdf` within a TeX editor and compile it with the option `pdfL
 
 Doing either should output the document `CVexample.pdf`. This is a template you can use to build a CV or résumé.
 
-If you are already familiar with LaTeX, you can edit `CVexample.tex` directly. Otherwise, open the document `howto.pdf`, which contains a guide to editing your template. 
+If you are already familiar with LaTeX, you can edit `CVexample.tex` directly. Otherwise, open the document `userguide.pdf`, which contains a guide to editing your template. 
