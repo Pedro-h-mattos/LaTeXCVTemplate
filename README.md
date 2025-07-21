@@ -15,7 +15,7 @@ This project comprises only the files `articleCV.cls`, `CVexample.tex` and `info
 
 There are two ways to download this project.
 
-#### Download Full Repository
+#### Download the Full Repository
 1. Navigate to Pedro-h-mattos/LaTeXCVTemplate.
 2. Above the list of files, click **<> Code**.
 3. Click **Download ZIP**.
@@ -24,24 +24,22 @@ There are two ways to download this project.
 This will download the entire repository as a .zip file; including the files `README.md` and the License, which are not necessary for the project.
 
 #### Download Individual Files
-It is also possible to download the only the necessary files one-by-one.
-
-1. Open a file in GitHub by clicking its name.
+1. Open a file in GitHub by clicking on its name.
 2. On the top-right, click **Download raw file**.
 4. Repeat steps 1-2 for the other files.
-3. Once downloaded, save your files in a new folder (e.g. myCV).
+3. Once downloaded, save your files in a new folder (e.g. myresume).
 
-Either way, you should have obtained a copy of the project files, that you can edit on your local computer. 
+Either way, you should have obtained a copy of the project filess that you can edit on your local computer. 
 
 ### Step Two: Usage 
-At the command line, run the command: 
+Open the command terminal and run the command: 
 
 ```
 pdflatex CVexample.tex
 ```
 
-Or, compile `CVexample.tex` from within a TeX editor. 
+Or open `CVexample.pdf` within a TeX editor and compile it with the option `pdfLaTeX`.
 
 Doing either should output the document `CVexample.pdf`. This is a template you can use to build a CV or résumé.
 
-If you are already familiar with LaTeX, you can edit `CVexample.tex` directly. Otherwise, download and open the document `instructions.pdf`, which contains a guide to editing your template. 
+If you are already familiar with LaTeX, you can edit `CVexample.tex` directly. Otherwise, open the document `howto.pdf`, which contains a guide to editing your template. 
