@@ -12,9 +12,8 @@
 %
 % The current maintainer of this work is Pedro H. Mattos
 %
-% This work consists of the files articleCV.cls, CVexample.tex,
-% instructions.tex, instructions.sty and its subsidiaries (within .tex/instructions/),
-% and the derived files CVexample.pdf and instructions.pdf
+% This work consists of the files articleCV.cls and CVexample.tex,
+% and the derived file instructions.pdf
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{articleCV}[2025/06/03 modification of the article class for CVs]
