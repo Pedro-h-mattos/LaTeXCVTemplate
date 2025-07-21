@@ -22,11 +22,11 @@ There are two ways to download this project.
 
 This will download the entire repository as a .zip file; including the files `README.md` and the License, which are not necessary for the project.
 
-It is also possible to download the files `articleCV.cls`, `CVexample.tex` and `info.sty` individually.
+It is also possible to download the only the necessary files one-by-one.
 
 1. Open a file in GitHub by clicking its name.
 2. On the top-right, click **Download raw file**.
-4. Repeat 1-2 for the other project files.
+4. Repeat steps 1-2 for the other files.
 3. Once downloaded, save your files in a new folder (e.g. myCV).
 
 Either way, you should have obtained a copy of the project files, that you can edit on your local computer. 
