@@ -11,7 +11,7 @@ Also consider installing a dedicated GUI (e.g. TeXworks or TeXstudio) for workin
 Alternatively, [Overleaf](https://www.overleaf.com/) is an cloud-based LaTeX editor that doesn't require any local installation.
 
 ### Step One: Download
-This project comprises the files `articleCV.cls`, `CVexample.tex` and `info.sty`.
+This project comprises only the files `articleCV.cls`, `CVexample.tex` and `info.sty`, and the instruction manual `howto.pdf`.
 
 There are two ways to download this project.
 
