@@ -15,6 +15,7 @@ This project comprises only the files `articleCV.cls`, `CVexample.tex` and `info
 
 There are two ways to download this project.
 
+#### Download Full Repository
 1. Navigate to Pedro-h-mattos/LaTeXCVTemplate.
 2. Above the list of files, click **<> Code**.
 3. Click **Download ZIP**.
@@ -22,6 +23,7 @@ There are two ways to download this project.
 
 This will download the entire repository as a .zip file; including the files `README.md` and the License, which are not necessary for the project.
 
+#### Download Individual Files
 It is also possible to download the only the necessary files one-by-one.
 
 1. Open a file in GitHub by clicking its name.
