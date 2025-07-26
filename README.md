@@ -32,7 +32,7 @@ This will download the entire repository as a .zip file; including the files `RE
 Either way, you should have obtained a copy of the project files that you can edit on your local computer. 
 
 ### Step Two: Usage 
-Open the command terminal and run the command: 
+Open a command terminal and run the command: 
 
 ```
 pdflatex CVexample.tex
