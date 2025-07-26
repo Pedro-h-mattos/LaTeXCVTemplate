@@ -8,7 +8,7 @@ A TeX distribution is the only software dependency necessary for working on this
 
 Also consider installing a dedicated GUI (e.g. TeXworks or TeXstudio) for working with TeX files. This will make editing and compiling TeX files easier.
 
-Alternatively, [Overleaf](https://www.overleaf.com/) is an cloud-based LaTeX editor that doesn't require any local installation.
+Alternatively, [Overleaf](https://www.overleaf.com/) is an cloud-based LaTeX editor which doesn't require any local installation.
 
 ### Step One: Download
 This project comprises only the files `articleCV.cls`, `CVexample.tex` and `info.sty`, and the instruction manual `userguide.pdf`.
