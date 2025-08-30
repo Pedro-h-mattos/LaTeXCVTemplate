@@ -27,33 +27,34 @@
 \RequirePackage[english]{babel}
 \RequirePackage{libertine}
 
-%--------------------------------------------------
+
 % Page size
 \RequirePackage{geometry}
 \geometry{margin=25mm}
 
-%--------------------------------------------------
+
 % Page style
 \RequirePackage{fancyhdr}
 \pagestyle{empty}
 \fancyhf{}
 
-%--------------------------------------------------
+
 % Sections
 \RequirePackage{titlesec}
 \titleformat{\section}{\Large\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{0pt}{5pt}
 
-%--------------------------------------------------
+
 % Items
 \RequirePackage{enumitem}
 \setlist[1]{labelindent=\parindent}
 \setlist[itemize]{topsep=0pt, after=\vspace{\baselineskip}, before=\small, label=---}
 
+
 % Tables
-%--------------------------------------------------
 \RequirePackage{tabularx}
 \RequirePackage{array}
+
 
 %	creates two `fake' column types `$' and `^', used to apply `\currentrowstyle'
 \newcolumntype{$}{>{\global\let\currentrowstyle\relax}} 		%	a column of type `$' indicates nothing
@@ -69,7 +70,7 @@
 \end{tabularx}
 }
 
-%--------------------------------------------------
+
 % Hyperlinks
 \RequirePackage{hyperref} 	%	enables hypertext functionality
 \newcommand\Email[1]{\href{mailto:#1}{#1}}	%	defines a new command called \Email, which creates an email link that directs readers to the relevant inbox
@@ -79,4 +80,5 @@
 	urlcolor=[RGB]{0,102,204}	%	 URL-links are coloured HTML-standard blue
 }
 \urlstyle{same}	% makes URL formatting the same as other hypertext links within the document
+
 \endinput
