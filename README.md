@@ -42,4 +42,8 @@ Or open `CVexample.pdf` within a TeX editor and compile it with the option `pdfL
 
 Doing either should output the document `CVexample.pdf`. This is a template you can use to build a CV or résumé.
 
-If you are already familiar with LaTeX, you can edit `CVexample.tex` directly. Otherwise, open the document `userguide.pdf`, which contains a guide to editing your template. 
+If you are already familiar with LaTeX, you can edit `CVexample.tex` directly. Otherwise, open the document `userguide.pdf`, which contains a guide to editing your template.
+
+## Project Overview
+
+This project is intended as an introduction to typesetting with LaTeX, especially for students. The project and associated tutorial are intended to facilitate learning by providing a reward in the form of a useful CV/résumé. It is not exhaustive, but complimentary to other tutorials. A more in-depth introduction to the software, or useful reference material can be found at \url{https://www.overleaf.com/learn/latex/Learn\_LaTeX\_in\_30\_minutes}.
